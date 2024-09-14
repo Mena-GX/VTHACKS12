@@ -1,6 +1,47 @@
-#header{
-    text-align: center;
-    size: 500px;
-    width:100%;
-    height:100px;
+body{
+    background-color: #83c9ad;
+}
+
+ul{
+    list-style-type: none;
+    margin: -8px;
+    padding:0;
+    overflow:hidden;
+    border:1px solid black;
+    top:0;
+    height:70px;
+    background-color: #1ca381;
+    position:sticky;
+}
+
+li{
+    float:left;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.dot {
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.img_placeholder{
+    background-color: black;
+    height: 300px;
+    width: 350px;
+    margin:25px;
+    
+}
+
+#poke{
+    padding:0;
+    width: 400px;
+    height: 500px;
+    background-color: azure;
+    position: absolute;
+    left:200px;
+    top:100px;
+    
 }
