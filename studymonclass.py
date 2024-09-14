@@ -13,32 +13,40 @@ class Studymon():
 # fire type studymon class
 class Firemon(Studymon):
     type = "Fire"
-    def __init__(self, l, n, m):
+    rank = 1
+    def __init__(self, l, n, m, r):
         super().__init__(l, n, m)
+        self.rank = r
     def ShowFire():
         print("")
 
 # water type studymon class
 class Watermon(Studymon):
     type = "Water"
-    def __init__(self, l, n, m):
+    rank = 1
+    def __init__(self, l, n, m, r):
         super().__init__(l, n, m)
+        self.rank = r
     def LiftWater():
         print("")
 
 # Earth type studymon class 
 class Earthmon(Studymon):
     type = "Earth"
-    def __init__(self, l, n, m):
+    rank = 1
+    def __init__(self, l, n, m, r):
         super().__init__(l, n, m)
+        self.rank = r
     def LiftEarth():
         print("")
 
 # Air type studymon class
 class Airmon(Studymon):
     type = "Air"
-    def __init__(self, l, n, m):
+    rank = 1
+    def __init__(self, l, n, m, r):
         super().__init__(l, n, m)
+        self.rank = r
     def LiftSelf():
         print("")
     
