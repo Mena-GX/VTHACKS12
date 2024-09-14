@@ -11,6 +11,7 @@ body{
     top:0;
     position:sticky;
     z-index: 100;
+    filter: drop-shadow(#184d36 1px 1px 10px);
 }
 
 li{
@@ -24,25 +25,26 @@ li{
     width:30px;
     border-radius: 50%;
     background-color: black;
+    filter: drop-shadow(#184d36 2px 1px 10px);
 }
 
 .img_placeholder{
     background-color: black;
     height: 300px;
     width: 350px;
-    margin:25px;
-    
+    position: absolute;
+    top:70px;
+    left:150px;
 }
 
 #poke{
     padding:0;
-    width: 400px;
-    height: 500px;
+    width: 650px;
+    height: 600px;
     background-color: azure;
     position: absolute;
-    left:300px;
+    left:150px;
     top:100px;
-    
 }
 
 #to_do_list{
@@ -53,12 +55,25 @@ li{
     right:0;
     list-style-type: none;
     text-align: center;
+    padding:0;
+}
+
+#list{
+    margin:0;
+    padding:0;
+    width:100%;
 }
 
 #list li {
     background-color: grey;
     list-style-type: none;
-    
+    text-align: center;
+    position:relative;
+    width:370px;
+}
+
+#list li:hover{
+    background-color:aqua;
 }
 
 #currPoke{
@@ -111,5 +126,23 @@ li{
     position:absolute;
     right:0;
     top:500px;
+    text-align: center;
+}
+
+#title{
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+}
+
+#login{
+    background-color: white;
+    width:300px;
+    height:400px;
+    position: absolute;
+    top: 250px;
+    left: 560px;
     text-align: center;
 }
