@@ -13,40 +13,40 @@ class Studymon():
 # fire type studymon class
 class Firemon(Studymon):
     type = "Fire"
-    rank = 1
-    def __init__(self, l, n, m, r):
+    experience = 0
+    def __init__(self, l, n, m, e):
         super().__init__(l, n, m)
-        self.rank = r
+        self.experience = e
     def ShowFire():
         print("")
 
 # water type studymon class
 class Watermon(Studymon):
     type = "Water"
-    rank = 1
-    def __init__(self, l, n, m, r):
+    experience = 0
+    def __init__(self, l, n, m, e):
         super().__init__(l, n, m)
-        self.rank = r
+        self.experience = e
     def LiftWater():
         print("")
 
 # Earth type studymon class 
 class Earthmon(Studymon):
     type = "Earth"
-    rank = 1
-    def __init__(self, l, n, m, r):
+    experience = 0
+    def __init__(self, l, n, m, e):
         super().__init__(l, n, m)
-        self.rank = r
+        self.experience = e
     def LiftEarth():
         print("")
 
 # Air type studymon class
 class Airmon(Studymon):
     type = "Air"
-    rank = 1
-    def __init__(self, l, n, m, r):
+    experience = 0
+    def __init__(self, l, n, m, e):
         super().__init__(l, n, m)
-        self.rank = r
+        self.experience = e
     def LiftSelf():
         print("")
     
