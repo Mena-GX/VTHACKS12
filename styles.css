@@ -77,3 +77,10 @@ li{
     position:absolute;
     background-color: white;
 }
+
+#classes{
+    background-color: white;
+    width:900px;
+    height:620px;
+    margin:0 auto;
+}
