@@ -2,16 +2,19 @@ body{
     background-color: #83c9ad;
 }
 
-ul{
+#navbar{
     list-style-type: none;
     margin: -8px;
     padding:0;
-    overflow:hidden;
-    border:1px solid black;
-    top:0;
     height:70px;
     background-color: #1ca381;
+    top:0;
     position:sticky;
+    z-index: 100;
+}
+
+ul{
+    
 }
 
 li{
@@ -41,7 +44,23 @@ li{
     height: 500px;
     background-color: azure;
     position: absolute;
-    left:200px;
+    left:300px;
     top:100px;
+    
+}
+
+#to_do_list{
+    background-color:azure;
+    height:100%;
+    width:400px;
+    position: absolute;
+    right:0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#list li {
+    background-color: grey;
+    list-style-type: none;
     
 }
