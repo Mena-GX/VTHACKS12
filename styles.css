@@ -137,7 +137,8 @@ li{
     text-align: center;
     position: absolute;
     top: 150px;
-    left: 600px;
+    left: 630px;
+    font-family: "Handjet", sans-serif;
 }
 
 #login{
@@ -148,6 +149,8 @@ li{
     top: 250px;
     left: 560px;
     text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(#184d36 2px 1px 10px);
 }
 
 #poke h1{
@@ -190,4 +193,31 @@ li{
     position: absolute;
     top:370px;
     left:260px;
+}
+
+#submit{
+    position:absolute;
+    border:none;
+    top: 250px;
+    z-index: 100;
+    width:100px;
+    height:30px;
+    left:100px;
+    border-radius: 2px;
+    font-family: "Quicksand", sans-serif;
+}
+
+#submit:hover{
+    background-color: #83c9ad;
+}
+
+#signUp{
+    position: absolute;
+    top:320px;
+    left:120px;
+    color:black;
+}
+
+#signUp:hover{
+    color:#184d36;
 }
