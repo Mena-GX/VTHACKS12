@@ -3,15 +3,16 @@ import requests
 import json
 class Studymon():
     level = 0
-    name = "mon"
+    name = ""
     api_info = ""
-    can_evolve = False
+    has_evo_chain = False
     evolution_level = 0
+    next_stage = None
     sprite = None
-    def __init__(self, n):
+    def __init__(self, n, l):
         #attribute
         self.name = n
-        self.level = 1
+        self.level = l
         #getting stuff from pokeapi url
         base_url = "https://pokeapi.co/api/v2/"
         req_gen = requests.get(base_url + "pokemon/" + n)
@@ -26,10 +27,14 @@ class Studymon():
         req_evo = requests.get(evolution_url)
         evo_info = json.loads(req_evo)
         evo_chain = evo_info.get("chain")
-        if(len(evo_chain.get("evolves_to")) > 0):
-            self.can_evolve = True
-        
-        self.evolution_level = general_info.get("")
+        #determines whether a studymon is a part of an evolutionary chain
+        if(len(evo_chain.get("evolution_details")) > 0):
+            self.has_evo_chain = True
+        #gets the level the mon needs to be to evolve as well as the name of its evolution
+        if(self.has_evo_chain):
+            self.evolution_level = evo_chain.get("evolves_to").get("evolution_details")[0].get("min_level")
+            self.next_stage = evo_chain.get("evolves_to").get("species").get("name")
+        #sprite stuff
         self.sprite = general_info.get("sprites").get("front_default")
     
     def getSprite(self) -> str:
@@ -37,10 +42,10 @@ class Studymon():
     
     #Turns this studymon into a new studymon
     def evolve(self):
-        if(not self.can_evolve):
+        if(not self.has_evo_chain):
             return
         else:
-            self = Studymon("evolution name")
+            self = Studymon(self.next_stage)
 
     #runs the exp calculator to earn exp
     
@@ -49,8 +54,6 @@ class Studymon():
         if(self.level >= self.evolution_level):
             self.evolve()
 
-    def sayhi():
-        print("hello")
 
 
 print("hello")
