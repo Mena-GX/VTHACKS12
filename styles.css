@@ -1,5 +1,6 @@
 body{
     background-color: #83c9ad;
+    font-family: "Quicksand", sans-serif;
 }
 
 #navbar{
@@ -12,6 +13,7 @@ body{
     position:sticky;
     z-index: 100;
     filter: drop-shadow(#184d36 1px 1px 10px);
+    font-family: "Handjet", sans-serif;
 }
 
 li{
@@ -91,6 +93,7 @@ li{
     width:400px;
     position:absolute;
     background-color: white;
+    text-align: center;
 }
 
 #classes{
@@ -145,4 +148,46 @@ li{
     top: 250px;
     left: 560px;
     text-align: center;
+}
+
+#poke h1{
+    font-size: 40px;
+    position: absolute;
+    top:370px;
+    left:260px;
+}
+
+#XP{
+    position:absolute;
+    top:520px;
+    left:275px;
+}
+
+#Level{
+    position:absolute;
+    top:420px;
+    left:280px;
+    font-size: 25px;;
+}
+
+#xpBar{
+    background-color: #34d970;
+    height:20px;
+    width:5px;
+    position: absolute;
+    top:510px;
+    left: 250px;
+}
+
+#lvl_num{
+    position:absolute;
+    top:465px;
+    left:305px;
+}
+
+#currPoke h1{
+    font-size: 40px;
+    position: absolute;
+    top:370px;
+    left:260px;
 }
