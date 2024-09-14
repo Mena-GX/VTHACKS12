@@ -14,6 +14,7 @@ et-xmlfile==1.1.0
 fastapi==0.109.2
 filelock==3.13.1
 Flask==3.0.3
+Flask-Cors==5.0.0
 gmplot==1.4.1
 h11==0.14.0
 h5py==3.10.0
