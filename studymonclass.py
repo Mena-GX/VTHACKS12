@@ -1,18 +1,30 @@
 # studymon objects
+import requests
+import json
 class Studymon():
     level = 0
     name = "mon"
+    api_info = None
     experience = 0
+    base_experience = 0
     modelID = 1
     def __init__(self, l, n, m, e):
+        #attribute
         self.level = l
         self.name = n
-        self.modelID = m
+        #getting stuff from pokeapi url
+        url = "https://pokeapi.co/api/v2/pokemon/" + n
+        general_info = requests.get(url)
+        api_info = json.loads(general_info.text)
+        base_experience = api_info.get("base_experience")
+        #more attributes
         self.experience = e
+        self.modelID = m
+        
     def sayhi():
         print("hello")
 
-    
+
     
 #class SubClass(SuperClass):
     #def __init__(self, name, age):
