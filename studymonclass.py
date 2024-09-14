@@ -7,8 +7,8 @@ class Studymon():
     api_info = None
     experience = 0
     base_experience = 0
-    modelID = 1
-    def __init__(self, l, n, m, e):
+    modelID = None
+    def __init__(self, l, n, e):
         #attribute
         self.level = l
         self.name = n
@@ -19,13 +19,13 @@ class Studymon():
         base_experience = api_info.get("base_experience")
         #more attributes
         self.experience = e
-        self.modelID = m
+        modelID = api_info.get()
         
     def sayhi():
         print("hello")
 
 
-    
+print("hello")
 #class SubClass(SuperClass):
     #def __init__(self, name, age):
         # Call the constructor of the superclass
