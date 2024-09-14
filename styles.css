@@ -13,10 +13,6 @@ body{
     z-index: 100;
 }
 
-ul{
-    
-}
-
 li{
     float:left;
     padding: 15px;
@@ -63,4 +59,21 @@ li{
     background-color: grey;
     list-style-type: none;
     
+}
+
+#currPoke{
+    width:700px;
+    height:600px;
+    background-color: white;
+    position: absolute;
+    top:100px;
+    left:100px;
+}
+
+#all_poke{
+    right:0;
+    height:100%;
+    width:400px;
+    position:absolute;
+    background-color: white;
 }
