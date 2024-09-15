@@ -221,3 +221,24 @@ li{
 #signUp:hover{
     color:#184d36;
 }
+
+#assignments_list{
+    list-style-type: none;
+}
+
+#assignments p{
+    position:absolute;
+    top: 380px;
+    left:140px;
+    cursor: pointer;
+}
+
+#assignments p:hover{
+    color:#36ba81;
+}
+
+#reward img{
+    width:100px;
+    height:100px;
+    cursor:pointer;
+}
