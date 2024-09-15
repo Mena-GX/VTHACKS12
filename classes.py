@@ -5,6 +5,7 @@ class Teacher:
     t_username = None
     t_password = None
     # student list to add
+    # section to add
     def __init__(self, tu, tp):
         self.t_username = tu
         self.t_password = tp
