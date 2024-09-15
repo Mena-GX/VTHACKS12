@@ -1,5 +1,5 @@
 body{
-    background-color: #83c9ad;
+    background-color: #104038;
     font-family: "Quicksand", sans-serif;
 }
 
@@ -30,6 +30,27 @@ li{
     filter: drop-shadow(#184d36 2px 1px 10px);
 }
 
+#box1{
+    height:100px;
+    width:100px;
+    background-color: rgb(231, 231, 126);
+    border-radius: 10px;;
+}
+
+#box2{
+    height:100px;
+    width:100px;
+    background-color: rgb(19, 86, 38);
+    border-radius: 10px;;
+}
+
+#box3{
+    height:100px;
+    width:100px;
+    background-color: rgb(34, 146, 105);
+    border-radius: 10px;;
+}
+
 .img_placeholder{
     height: 300px;
     width: 350px;
@@ -37,7 +58,7 @@ li{
     top:70px;
     left:150px;
     background-image: url(eevee.png);
-    background-size:300px 320px;
+    background-size:100%;
     background-position: center;
 }
 
@@ -45,7 +66,7 @@ li{
     padding:0;
     width: 650px;
     height: 600px;
-    background-color: azure;
+    background-color: #47af6b;
     position: absolute;
     left:150px;
     top:100px;
@@ -53,7 +74,7 @@ li{
 }
 
 #to_do_list{
-    background-color:azure;
+    background-color:#83c9ad;
     height:100%;
     width:400px;
     position: absolute;
@@ -70,11 +91,11 @@ li{
 }
 
 #list li {
-    background-color: grey;
     list-style-type: none;
     text-align: center;
     position:relative;
-    width:370px;
+    width:100%;
+    border:solid 1px black;
 }
 
 #list li:hover{
@@ -82,10 +103,22 @@ li{
     cursor: pointer;
 }
 
+#classes ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 50px;
+    cursor: pointer;
+}
+
+#classesList{
+    padding:50px;
+    list-style-type: none;
+}
+
 #currPoke{
     width:700px;
     height:600px;
-    background-color: white;
+    background-color: #47af6b;
     position: absolute;
     top:100px;
     left:100px;
@@ -96,19 +129,24 @@ li{
     height:100%;
     width:400px;
     position:absolute;
-    background-color: white;
+    background-color: #36ba81;
     text-align: center;
 }
 
 #classes{
-    background-color: white;
+    background-color: #36ba81;
     width:900px;
     height:620px;
     margin:0 auto;
+    text-align: center;
+}
+
+#classes h1{
+    padding:20px;
 }
 
 #students{
-    background-color: white;
+    background-color: #47af6b;
     position:absolute;
     top:100px;
     left:100px;
@@ -116,8 +154,37 @@ li{
     height:600px;
 }
 
+#students ul{
+    list-style-type: none;
+    margin:0;
+    padding-top:70px;
+}
+
+#profilePic{
+    border-radius: 50%;
+    height: 100px;
+    width:100px;
+    background-color: #184d36;
+    background-image: url(eevee.png);
+    background-position: 50%;
+    background-size: 100%;
+    margin: auto;
+}
+
+#studentsList{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#studentsList1{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
 #assignments{
-    background-color:azure;
+    background-color:#47af6b;
     height:450px;
     width:400px;
     position: absolute;
@@ -127,7 +194,7 @@ li{
 }
 
 #reward{
-    background-color:white;
+    background-color:#93d174;
     height:240px;
     width:400px;
     position:absolute;
@@ -228,6 +295,21 @@ li{
 
 #assignments_list{
     list-style-type: none;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+#assignments_list li{
+    list-style-type: none;
+    text-align: center;
+    position:relative;
+    width:100%;
+    border: black 1px solid;
+}
+
+#assignments_list li:hover{
+    background-color:#184d36;
 }
 
 #assignments p{
@@ -238,7 +320,7 @@ li{
 }
 
 #assignments p:hover{
-    color:#36ba81;
+    color:#c2ff8c;
 }
 
 #reward img{
@@ -253,7 +335,7 @@ li{
 }
 
 #rewardsPopUp{
-    background-color: grey;
+    background-color: rgb(221, 234, 221);
     width:800px;
     height:500px;
     position:absolute;
@@ -261,10 +343,31 @@ li{
     left:350px;
     text-align: center;
     visibility: hidden;
+    border-radius: 10px;
+    filter: drop-shadow(5px 10px 10px rgb(59, 54, 54));
+}
+
+#rewardsPopUp ul{
+    list-style-type: none;
+}
+
+#rewardsPopUp Button{
+    position:absolute;
+    bottom: 40px;
+    left:320px;
+    border:none;
+    border-radius: 5px;
+    height:40px;
+    width:150px;
+    filter: drop-shadow(5px 10px 10px rgb(59, 54, 54));
+}
+
+#rewardsPopUp Button:hover{
+    background-color: #d3d3d3;
 }
 
 #createAssignmentsPopUp{
-    background-color: grey;
+    background-color: rgb(221, 234, 221);
     width:800px;
     height:500px;
     position:absolute;

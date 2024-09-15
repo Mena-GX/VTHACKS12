@@ -45,3 +45,16 @@ function removeAssignments(theID){
     document.getElementById(theID).remove();
 }
 
+function openClass(){
+    window.location.href="teacher_class.html"
+}
+
+function selectStudent(clicked){
+    document.getElementById(clicked).style.border = "solid #83c9ad 5px"
+}
+
+function rewardStudent(){
+    document.getElementById("rewardsPopUp").style.visibility = "hidden";
+    
+    alert("John Doe has been rewarded a pokeball!")
+}

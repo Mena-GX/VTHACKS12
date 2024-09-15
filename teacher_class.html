@@ -30,20 +30,22 @@
         <div id = "students">
             <h1>Students</h1>
             
-            <table>
-                <tr>
-                    <td></td>
-                </tr>
-            </table>
+            <ul>
+                <li id = "studentsList">
+                    <div>
+                        <div id ="profilePic"></div>
+
+                        <p>John Doe</p>
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <div id = "assignments">
             <h1>Assignments</h1>
 
             <ul id = "assignments_list">
-                <li>
-
-                </li>
+                <li>Reading 9/12</li>
             </ul>
 
             <p onclick = "createAssignment()">Create Assignment</p>
@@ -64,13 +66,17 @@
                 <i class="fa-solid fa-x" id = "exit" onclick = "closeRewards()"></i>
             </div>
 
-            <table>
-                <tr>
-                    <td>
+            <ul>
+                <li id = "studentsList1" onclick = "selectStudent(this.id)">
+                    <div>
+                        <div id ="profilePic"></div>
 
-                    </td>
-                </tr>
-            </table>
+                        <p>John Doe</p>
+                    </div>
+                </li>
+            </ul>
+
+            <button onclick = "rewardStudent()">Reward Student</button>
         </div>
 
         <div id = "createAssignmentsPopUp">
