@@ -31,12 +31,14 @@ li{
 }
 
 .img_placeholder{
-    background-color: black;
     height: 300px;
     width: 350px;
     position: absolute;
     top:70px;
     left:150px;
+    background-image: url(eevee.png);
+    background-size:300px 320px;
+    background-position: center;
 }
 
 #poke{
@@ -47,6 +49,7 @@ li{
     position: absolute;
     left:150px;
     top:100px;
+    border-radius: 10px;
 }
 
 #to_do_list{
@@ -75,7 +78,8 @@ li{
 }
 
 #list li:hover{
-    background-color:aqua;
+    background-color: #36ba81;
+    cursor: pointer;
 }
 
 #currPoke{

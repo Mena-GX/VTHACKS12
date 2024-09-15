@@ -1,10 +1,13 @@
-var user;
 
 function submitFunc(){
-    if (user == 'student'){
+    var userInput = document.getElementById("username").value;
+
+    if (userInput == 'student'){
         window.location.href="student_home.html"
-    } else {
+    } else if (userInput == 'teacher'){
         window.location.href="teacher_home.html"
+    } else {
+        alert("No Account with that Username")
     }
 }
 
@@ -23,3 +26,4 @@ function createAssignment(){
 function rewardBtn(){
     document.getElementById("rewardsPopUp").style.visibility = "visible";
 }
+
