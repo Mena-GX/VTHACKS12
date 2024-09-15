@@ -27,3 +27,15 @@ function rewardBtn(){
     document.getElementById("rewardsPopUp").style.visibility = "visible";
 }
 
+var XP = 0;
+
+function finishAssignment(clicked){
+    XP += 5;
+    document.getElementById(clicked).style.backgroundColor = "#36ba81";
+    document.getElementById(clicked).style.textDecoration = "strikethrough";
+
+    document.getElementById('xpBar').style.width = document.getElementById('xpBar').offsetWidth + 5 + "px";
+
+    document.getElementById("XP").innerHTML = "XP: " + XP + "/100";
+}
+
