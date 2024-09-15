@@ -4,9 +4,12 @@ class Teacher:
     # basic information for teacher to login 
     t_username = None
     t_password = None
+    # student list to add
     def __init__(self, tu, tp):
         self.t_username = tu
         self.t_password = tp
+    # function to reward student to add
+    # function to make new assignment to add
     
 
 
@@ -22,7 +25,7 @@ Teachers.append(Teacher("Vlad", "rjgjgj"))
 Teachers.append(Teacher("Walt", "rg16?"))
 Teachers.append(Teacher("Charles", "tptptp"))
 
-
+# login but need more code
 i = 0
 j = 0
 while i != 1:
@@ -36,3 +39,7 @@ while i != 1:
     j = j - 2
     if i == 0:
         print("wrong username or password, please try again")
+        
+Vlad = Teacher (Teachers[0].t_username, Teachers[0].t_password)
+Walt = Teacher (Teachers[1].t_username, Teachers[1].t_password)
+Charles = Teacher (Teachers[2].t_username, Teachers[2].t_password)
