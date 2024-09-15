@@ -32,10 +32,16 @@ var XP = 0;
 function finishAssignment(clicked){
     XP += 5;
     document.getElementById(clicked).style.backgroundColor = "#36ba81";
-    document.getElementById(clicked).style.textDecoration = "strikethrough";
+    document.getElementById(clicked).style.textDecoration = "line-through";
 
     document.getElementById('xpBar').style.width = document.getElementById('xpBar').offsetWidth + 5 + "px";
 
     document.getElementById("XP").innerHTML = "XP: " + XP + "/100";
+
+    setTimeout(removeAssignments, 2000, clicked);
+}
+
+function removeAssignments(theID){
+    document.getElementById(theID).remove();
 }
 
